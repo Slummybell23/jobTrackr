@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode: dark: utilities activate when a .dark
+   ancestor exists (we toggle it on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* App-wide base. Tailwind's preflight handles the reset; these just make the
+   full-height sidebar layout work. */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
